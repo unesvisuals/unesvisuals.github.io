@@ -1,0 +1,390 @@
+
+/* Floating Features CSS */
+
+/* Floating Elements */
+.floating-element {
+    position: fixed;
+    z-index: 9000;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Floating Action Buttons */
+.floating-action-container {
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 9000;
+}
+
+.floating-action-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
+}
+
+.floating-action-btn:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.fab-primary {
+    background: linear-gradient(135deg, #00ffff, #0080ff);
+}
+
+.fab-secondary {
+    background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+}
+
+.fab-success {
+    background: linear-gradient(135deg, #4ecdc4, #44a08d);
+}
+
+.fab-warning {
+    background: linear-gradient(135deg, #feca57, #ff9ff3);
+}
+
+/* Floating Notifications */
+.floating-notification {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background: rgba(15, 15, 15, 0.95);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border-left: 4px solid #00ffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    z-index: 10000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.floating-notification.show {
+    transform: translateX(0);
+}
+
+.floating-notification.success {
+    border-left-color: #4ecdc4;
+}
+
+.floating-notification.error {
+    border-left-color: #ff6b6b;
+}
+
+.floating-notification.warning {
+    border-left-color: #feca57;
+}
+
+/* Floating Progress Bar */
+.floating-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 10000;
+}
+
+.floating-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #00ffff, #0080ff);
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+/* Floating Tooltip */
+.floating-tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    z-index: 10000;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.floating-tooltip.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.floating-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Floating Search */
+.floating-search {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(15, 15, 15, 0.95);
+    border-radius: 15px;
+    padding: 30px;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    min-width: 400px;
+}
+
+.floating-search.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.floating-search input {
+    width: 100%;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.floating-search input:focus {
+    border-color: #00ffff;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+/* Floating Menu */
+.floating-menu {
+    position: fixed;
+    top: 50%;
+    right: -300px;
+    transform: translateY(-50%);
+    background: rgba(15, 15, 15, 0.95);
+    border-radius: 15px 0 0 15px;
+    padding: 20px;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 9000;
+    transition: right 0.3s ease;
+    min-width: 250px;
+}
+
+.floating-menu.active {
+    right: 0;
+}
+
+.floating-menu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin-bottom: 5px;
+}
+
+.floating-menu-item:hover {
+    background: rgba(0, 255, 255, 0.1);
+    transform: translateX(-5px);
+}
+
+.floating-menu-item i {
+    color: #00ffff;
+    width: 20px;
+}
+
+/* Floating Back to Top */
+.floating-back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #00ffff, #0080ff);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 9000;
+}
+
+.floating-back-to-top.show {
+    opacity: 0.8;
+    visibility: visible;
+}
+
+.floating-back-to-top:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 255, 255, 0.4);
+}
+
+/* Floating Loading Overlay */
+.floating-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.floating-loading.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.floating-loading-content {
+    text-align: center;
+    color: white;
+}
+
+.floating-loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid #00ffff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+/* Floating Social Share */
+.floating-social-share {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9000;
+}
+
+.floating-social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+.floating-social-btn:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.social-facebook { background: #3b5998; }
+.social-twitter { background: #1da1f2; }
+.social-linkedin { background: #0077b5; }
+.social-instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .floating-search {
+        min-width: 90vw;
+        margin: 0 20px;
+    }
+    
+    .floating-menu {
+        min-width: 200px;
+    }
+    
+    .floating-social-share {
+        left: 10px;
+    }
+    
+    .floating-action-container {
+        right: 10px;
+        bottom: 80px;
+    }
+    
+    .floating-back-to-top {
+        right: 10px;
+        bottom: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+}
+
+/* Animation Keyframes */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}

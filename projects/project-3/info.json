@@ -1,0 +1,16 @@
+
+{
+  "title": "Digital Artwork",
+  "description": "Abstract Creative Illustration",
+  "category": "digital-art",
+  "fullDescription": "An abstract digital artwork exploring color theory and geometric compositions. This piece demonstrates mastery of digital painting techniques and creative expression through modern design elements.",
+  "images": [
+    "final-artwork.jpg",
+    "process-sketches.jpg",
+    "color-studies.jpg",
+    "details.jpg"
+  ],
+  "tools": ["Adobe Photoshop", "Procreate", "Adobe Illustrator"],
+  "client": "Personal Project",
+  "year": "2024"
+}

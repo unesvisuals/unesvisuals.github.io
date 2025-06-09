@@ -1,0 +1,21 @@
+Add the following impressive, non-destructive features to my website without changing the theme or layout:
+
+1. Floating “Assistant Is Online” Indicator
+Create a small circular badge/icon (bottom-right) that softly glows green with the text tooltip "Unes Assistant is online." It should float near or on top of the chat icon and appear only when the chat is available. Use subtle animations to make it pulse like a chatbot presence indicator.
+
+2. Dark/Light Mode Toggle
+Add a floating toggle button (top-right or top-left) with a moon/sun icon. On click, it should switch the entire site between dark and light themes using CSS classes. Remember theme preference using local storage so it stays after reload. Use smooth transitions for the switch.
+
+3. “Ask Me Anything” Modal
+When the user hovers or clicks the AI assistant icon or button, display a small modal popup or animated speech bubble that says:
+"Ask me anything! I'm Unes Assistant."
+Add a short bounce or glow animation to this modal when it appears, to grab attention and spark curiosity. Ensure it only appears once per session or fades out automatically after a few seconds.
+
+4. Voice-to-Text Input for AI Chat
+Add a small microphone icon inside or next to the AI chat input field. When clicked, it activates browser voice recognition (Web Speech API). The captured voice should be transcribed into the chat input box in real time. Once voice stops, it should auto-send the message to Unes Assistant like normal text.
+
+5. Preloader Animation with Unes Visuals Logo
+Before the full site loads, show a fullscreen preloader with the animated Unes Visuals logo (SVG or image). Animate it with a fade-in + spinning or pulsing effect. Use a brief delay (1–2 seconds) or remove once the site content is ready. Ensure smooth transition from preloader to homepage.
+
+Make sure all the features are mobile-friendly, lightweight, smooth, and consistent with modern design. Do not interfere with existing site elements or theme structure. Keep animations subtle, elegant, and not excessive. Maintain excellent performance on low-end devices too.
+

@@ -1,0 +1,15 @@
+
+{
+  "title": "Business Card Design",
+  "description": "Professional business card designs that make a lasting impression. Features modern typography, premium materials, and sophisticated color schemes that reflect corporate identity.",
+  "client": "Corporate Solutions Inc",
+  "year": "2024",
+  "category": "Print Design",
+  "tools": ["Adobe Illustrator", "Adobe InDesign", "Adobe Photoshop"],
+  "images": [
+    "projects/project-5/images/front-design.jpg",
+    "projects/project-5/images/back-design.jpg",
+    "projects/project-5/images/mockup-views.jpg",
+    "projects/project-5/images/print-ready.jpg"
+  ]
+}

@@ -1,0 +1,15 @@
+
+{
+  "title": "Website Graphics & UI",
+  "description": "Custom web graphics and user interface elements designed to enhance user experience. Includes icons, buttons, banners, and interactive elements with modern design principles.",
+  "client": "Digital Innovations Co",
+  "year": "2024",
+  "category": "UI/UX Design",
+  "tools": ["Figma", "Adobe XD", "Adobe Illustrator", "Sketch"],
+  "images": [
+    "projects/project-6/images/ui-elements.jpg",
+    "projects/project-6/images/icon-set.jpg",
+    "projects/project-6/images/web-banners.jpg",
+    "projects/project-6/images/interactive-design.jpg"
+  ]
+}

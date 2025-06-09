@@ -1,0 +1,16 @@
+
+{
+  "title": "Event Poster Campaign",
+  "description": "Creative Marketing Materials",
+  "category": "poster",
+  "fullDescription": "A vibrant poster design campaign for a music festival featuring dynamic typography, bold colors, and engaging visual elements that capture the energy and excitement of the event.",
+  "images": [
+    "main-poster.jpg",
+    "social-media-variants.jpg",
+    "print-materials.jpg",
+    "mockups.jpg"
+  ],
+  "tools": ["Adobe Photoshop", "Adobe Illustrator"],
+  "client": "Summer Vibes Festival",
+  "year": "2024"
+}

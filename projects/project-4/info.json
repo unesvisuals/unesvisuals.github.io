@@ -1,0 +1,15 @@
+
+{
+  "title": "Social Media Kit",
+  "description": "A comprehensive social media design package featuring Instagram post templates, story designs, and brand-consistent graphics that enhance online presence and engagement.",
+  "client": "BrandLift Agency",
+  "year": "2024",
+  "category": "Social Media Design",
+  "tools": ["Adobe Photoshop", "Canva Pro", "Adobe Illustrator"],
+  "images": [
+    "projects/project-4/images/instagram-posts.jpg",
+    "projects/project-4/images/story-templates.jpg",
+    "projects/project-4/images/highlight-covers.jpg",
+    "projects/project-4/images/carousel-designs.jpg"
+  ]
+}

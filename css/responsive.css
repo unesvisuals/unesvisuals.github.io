@@ -1,0 +1,555 @@
+
+/* Responsive Design CSS */
+
+/* Tablet Styles (768px - 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    .nav-container {
+        padding: 0 30px;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .about-content {
+        gap: 40px;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+    }
+}
+
+/* Mobile Landscape (768px and below) */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: rgba(10, 10, 10, 0.98);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        transition: left 0.3s ease;
+        backdrop-filter: blur(10px);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-description {
+        font-size: 1.1rem;
+        padding: 0 20px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .profile-placeholder {
+        width: 250px;
+        height: 250px;
+        font-size: 5rem;
+    }
+
+    .about-stats {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .services-grid,
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Modal adjustments */
+    .modal-body {
+        flex-direction: column;
+    }
+
+    .modal-gallery {
+        order: 1;
+    }
+
+    .modal-info {
+        order: 2;
+        max-height: 300px;
+    }
+
+    .modal-title {
+        font-size: 1.5rem;
+    }
+
+    .navigation-arrows {
+        font-size: 1.5rem;
+        padding: 10px 15px;
+    }
+
+    .nav-prev {
+        left: 10px;
+    }
+
+    .nav-next {
+        right: 10px;
+    }
+
+    .main-image-container {
+        min-height: 300px;
+    }
+
+    .image-thumbnails {
+        padding: 15px;
+        justify-content: center;
+    }
+
+    .thumbnail {
+        width: 60px;
+        height: 60px;
+    }
+    
+    /* Floating features mobile adjustments */
+    .theme-toggle {
+        top: 80px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+    
+    .assistant-online-indicator {
+        bottom: 15px;
+        right: 10px;
+    }
+    
+    .voice-input-btn {
+        width: 28px;
+        height: 28px;
+        right: 45px;
+    }
+    
+    .voice-input-btn i {
+        font-size: 12px;
+    }
+}
+
+/* Mobile Portrait (480px and below) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .nav-container {
+        padding: 0 15px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .animated-logo {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .logo-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo-inner-circle {
+        top: 15px;
+        left: 15px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .logo-text-hero {
+        font-size: 1.5rem;
+    }
+
+    .profile-placeholder {
+        width: 200px;
+        height: 200px;
+        font-size: 4rem;
+    }
+
+    .about-stats {
+        gap: 20px;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    .contact-form {
+        padding: 30px 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 40px;
+    }
+
+    .service-card {
+        padding: 30px 20px;
+    }
+
+    .service-icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .testimonial-slide {
+        padding: 30px 20px;
+    }
+
+    .testimonial-content p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    /* Modal mobile adjustments */
+    .modal-content {
+        width: 95%;
+        height: 95vh;
+        margin: 2.5vh auto;
+    }
+
+    .modal-header {
+        padding: 20px;
+    }
+
+    .modal-title {
+        font-size: 1.3rem;
+    }
+
+    .close-modal {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .modal-info {
+        padding: 20px;
+    }
+
+    .project-description {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    /* Mobile floating features adjustments */
+    .quick-access-panel {
+        left: 8px;
+        bottom: 80px;
+    }
+    
+    .panel-toggle {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .panel-toggle i {
+        font-size: 12px;
+    }
+    
+    .panel-content {
+        left: 45px;
+        min-width: 140px;
+        padding: 12px;
+    }
+    
+    .panel-item {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+    
+    .panel-social a {
+        width: 24px;
+        height: 24px;
+        font-size: 10px;
+    }
+    
+    .faq-search-box input {
+        padding: 12px 40px;
+        font-size: 0.9rem;
+    }
+    
+    .theme-toggle {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    /* Chatbot mobile adjustments */
+    .chatbot-window {
+        width: 95%;
+        height: 85vh;
+        bottom: 10px;
+        right: 2.5%;
+    }
+    
+    .chatbot-toggle {
+        bottom: 15px;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .chatbot-messages {
+        height: calc(85vh - 160px);
+    }
+
+    /* FAQ mobile optimization */
+    .faq-question {
+        padding: 20px 15px;
+    }
+    
+    .faq-question h3 {
+        font-size: 1rem;
+    }
+    
+    .faq-answer p {
+        padding: 0 15px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra small devices (360px and below) */
+@media (max-width: 360px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-description {
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .about-stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .profile-placeholder {
+        width: 180px;
+        height: 180px;
+        font-size: 3.5rem;
+    }
+    
+    .service-card {
+        padding: 25px 15px;
+    }
+    
+    .contact-form {
+        padding: 25px 15px;
+    }
+    
+    .modal-content {
+        width: 98%;
+        height: 98vh;
+        margin: 1vh auto;
+    }
+    
+    .quick-access-panel {
+        left: 5px;
+        bottom: 75px;
+    }
+    
+    .panel-content {
+        left: 40px;
+        min-width: 130px;
+    }
+    
+    .chatbot-window {
+        width: 98%;
+        right: 1%;
+    }
+}
+
+/* Landscape orientation adjustments */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 0 50px;
+    }
+    
+    .animated-logo {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 15px;
+    }
+    
+    .logo-circle {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .logo-inner-circle {
+        top: 10px;
+        left: 10px;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .logo-text-hero {
+        font-size: 1.2rem;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+    
+    .hero-description {
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+    }
+    
+    .hire-btn {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+    
+    section {
+        padding: 50px 0;
+    }
+    
+    .modal-content {
+        height: 95vh;
+    }
+    
+    .chatbot-window {
+        height: 80vh;
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .chatbot-container,
+    .quick-access-panel,
+    .theme-toggle,
+    .assistant-online-indicator,
+    .floating-features {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .hero {
+        page-break-after: always;
+    }
+    
+    .portfolio-item,
+    .service-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .animated-logo,
+    .portfolio-graphic,
+    .service-icon {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Dark mode preference */
+@media (prefers-color-scheme: dark) {
+    /* Keep existing dark theme as default */
+}
+
+/* Light mode preference */
+@media (prefers-color-scheme: light) {
+    body:not(.dark-theme) {
+        background: #f8f9fa;
+        color: #333;
+    }
+}

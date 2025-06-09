@@ -1,0 +1,13 @@
+
+{
+  "title": "Brand Identity Design",
+  "description": "Complete Logo & Branding Package",
+  "category": "branding",
+  "fullDescription": "A comprehensive brand identity design project featuring logo creation, color palette development, and brand guidelines. This project showcases modern design principles with a focus on versatility and memorability.",
+  "images": [
+    "projects/project-1/images/Haunted Castle.png"
+  ],
+  "tools": ["Adobe Illustrator", "Adobe Photoshop", "Adobe InDesign"],
+  "client": "TechStart Solutions",
+  "year": "2024"
+}
