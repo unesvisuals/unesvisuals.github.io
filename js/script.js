@@ -646,7 +646,7 @@ function createQuickAccessPanel() {
                 <a href="https://www.instagram.com/doomslayer.47/" target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://www.behance.net/brightvibes" target="_blank">
+                <a href="https://www.behance.net/unesvisuals" target="_blank">
                     <i class="fab fa-behance"></i>
                 </a>
             </div>
