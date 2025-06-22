@@ -702,7 +702,7 @@ function toggleTheme() {
     }
 }
 
-const OPENAI_API_KEY = 'sk-REPLACE-WITH-YOUR-API-KEY'; // 👈 TEMPORARY: never publish this live
+const OPENAI_API_KEY = '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'; // 👈 TEMPORARY: never publish this live
 
 async function sendMessage() {
     const input = document.getElementById("userInput");
