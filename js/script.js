@@ -702,49 +702,6 @@ function toggleTheme() {
     }
 }
 
-const OPENAI_API_KEY = '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'; // 👈 TEMPORARY: never publish this live
-
-async function sendMessage() {
-    const input = document.getElementById("userInput");
-    const userText = input.value.trim();
-    if (!userText) return;
-
-    appendToChat("You", userText);
-    input.value = "";
-
-    try {
-        const res = await fetch("https://api.openai.com/v1/chat/completions", {
-            method: "POST",
-            headers: {
-                "Authorization": `Bearer ${OPENAI_API_KEY}`,
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                model: "gpt-4o", // or "gpt-3.5-turbo"
-                messages: [
-                    { role: "system", content: "You are a helpful assistant for a creative graphic designer's portfolio website." },
-                    { role: "user", content: userText }
-                ]
-            })
-        });
-
-        const data = await res.json();
-        const reply = data.choices[0].message.content.trim();
-        appendToChat("AI", reply);
-    } catch (err) {
-        appendToChat("AI", "Something went wrong. Please try again later.");
-        console.error(err);
-    }
-}
-
-function appendToChat(sender, message) {
-    const chatbox = document.getElementById("chatbox");
-    const newMsg = document.createElement("p");
-    newMsg.innerHTML = `<strong>${sender}:</strong> ${message}`;
-    chatbox.appendChild(newMsg);
-    chatbox.scrollTop = chatbox.scrollHeight;
-}
-
 // Load saved theme
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'light') {
